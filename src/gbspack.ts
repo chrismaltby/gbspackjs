@@ -14,7 +14,6 @@ export const parseSize = (line: string): ObjectBankData => {
 export const parseSizes = (contents: string): ObjectBankData[] => {
   const banks: ObjectBankData[] = [];
   const lines = contents.split("\n");
-  // const lines = [1,2,3];
   for (const line of lines) {
     if (line.includes("A _CODE_")) {
       const parsedSize = parseSize(line);
