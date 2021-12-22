@@ -1,0 +1,44 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"],
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style": 0,
+    "prefer-destructuring": 0,
+    "no-underscore-dangle": 0,
+    "no-bitwise": 0,
+    "no-plusplus": 0,
+    "jsx-a11y/no-autofocus": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "no-await-in-loop": 0,
+    "import/prefer-default-export": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "camelcase": ["error", {"allow": ["UNSAFE_componentWillReceiveProps", "icon_path", "bug_link_text"]}],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-unused-vars": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
+}
